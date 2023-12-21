@@ -10,6 +10,9 @@ const App = () => {
         <li>
           <Link to="/concurrent">Concurrent Mode</Link>
         </li>
+        <li>
+          <Link to="/srcset">Srcset img</Link>
+        </li>
       </ul>
     </nav>
   );
