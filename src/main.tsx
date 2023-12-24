@@ -3,24 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
-import ConcurrentComponent from "./concurrentMode";
-import ImgSrcset from "./imgSrcset";
+import { routes } from "./lib/routes";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/concurrent",
-    element: <ConcurrentComponent />,
-  },
-  {
-    path: "/srcset",
-    element: <ImgSrcset />,
-  },
-]);
+const router = createBrowserRouter(routes);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
